@@ -1,8 +1,12 @@
 table {
-  font-family: Verdana;
   font-size: 14px;
-  width: 600px;
+  margin-top: 20px;
   border-radius: 10px;
+}
+
+thead {
+  color: rgb(40, 114, 195);
+  background-color: rgb(254, 254, 254);
 }
 
 td,
@@ -13,10 +17,10 @@ th {
 }
 
 tbody tr:nth-child(2n) {
-  background-color: #eee;
+  background-color: rgb(254, 254, 254);
 }
 
-th {
-  top: 0;
-  background-color: #333;
+tr td:hover {
+  cursor: pointer;
+  color: rgb(234, 100, 53);
 }
