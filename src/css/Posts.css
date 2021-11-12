@@ -1,0 +1,20 @@
+.blog-posts-container {
+  background-color: white;
+  padding: 20px 20px;
+  margin: 50px;
+  display: grid;
+  justify-content: center;
+}
+.blog-posts-container h1 {
+  text-align: center;
+}
+
+.post {
+  border: 1px solid red;
+  width: 500px;
+  padding: 20px 20px;
+}
+
+.post p {
+  font-size: 12px;
+}

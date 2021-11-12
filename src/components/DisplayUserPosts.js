@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
+import '../css/Posts.css';
+
 
 export default function DisplayUserPosts({ id }) {
   const [posts, setPosts] = useState([]);
+
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
@@ -12,10 +15,12 @@ export default function DisplayUserPosts({ id }) {
   }, [id, setPosts]);
   
   return (
-    <div>
+    <div className="blog-posts-container">
+      <h1> User Posts </h1>
+      <hr />
       {posts.map((post) => (
-        <div key={post.id}>
-          <h1>{post.title}</h1>
+        <div key={post.id} className="post">
+          <h2>{post.title}</h2>
           <p>{post.body}</p>
         </div>
       ))}

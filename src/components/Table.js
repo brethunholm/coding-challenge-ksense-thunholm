@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import '../css/Table.css';
 
 
 export default function Table({ handleClick }) {
