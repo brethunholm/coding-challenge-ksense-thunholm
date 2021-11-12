@@ -27,7 +27,6 @@ body {
 h4,
 a {
   text-align: center;
-  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 a {
@@ -51,4 +50,18 @@ a:hover {
 
 .highlight {
   color: rgb(40, 114, 195);
+}
+
+.project-details {
+  padding: 10px 20px;
+  color: black;
+  display: grid;
+  justify-content: center;
+}
+.project-details span {
+  color: rgb(234, 100, 53);
+}
+.project-details ul {
+  list-style: none;
+  font-size: 12px;
 }

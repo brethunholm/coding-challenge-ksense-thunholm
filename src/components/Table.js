@@ -13,7 +13,7 @@ export default function Table({ handleClick }) {
   }, [setUsers]);
 
   return (
-    <div>
+    <div id="userList">
       <table className="table table-bordered table-hover">
         <thead>
           <tr>

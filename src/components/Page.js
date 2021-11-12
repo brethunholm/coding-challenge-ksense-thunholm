@@ -25,7 +25,19 @@ export default function Page() {
         </a>
       </div>
       <div className="application-info">
-          Welcome to the <span className="highlight">theBlog</span>! Click on a user below to see a list of their posts!
+          <p>Welcome to <a className="highlight" href="#userList">theBlog</a>! Click on a user below to see a list of their posts!</p>
+       
+          <div className="project-details">
+          <span>This application utilizes the following technologies:</span>
+          <ul>
+            <li>React JS</li>
+            <li>Bootstrap</li>
+            <li>CSS Grid</li>
+            <li>Fetch</li>
+            <li>DevOps - Netlify</li>
+          </ul>
+          </div>
+          
       </div>
 
       <Table handleClick={displayPosts} />
