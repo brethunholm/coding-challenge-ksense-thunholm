@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../css/Posts.css';
 
-export default function DisplayUserPosts({ id }) {
+export default function DisplayUserPosts({ id, userName }) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function DisplayUserPosts({ id }) {
 
   return (
     <div className="blog-posts-container">
-      <h1> User Posts </h1>
+      <h1>{userName ? `Posts by ${userName}` : `Select an user from the above table to display posts`} </h1>
       <hr />
       {posts.map((post) => (
         <div key={post.id} className="post">
