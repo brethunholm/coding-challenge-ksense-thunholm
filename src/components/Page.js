@@ -6,9 +6,11 @@ import '../css/Page.css';
 
 export default function Page() {
   const [userId, setUserId] = useState(null);
+  const [userName, setUserName] = useState(null)
 
-  function displayPosts({ id }) {
+  function displayPosts({ id, name }) {
     setUserId(id);
+    setUserName(name)
   }
   return (
     <div className="container">
@@ -41,7 +43,7 @@ export default function Page() {
       </div>
 
       <Table handleClick={displayPosts} />
-      <DisplayUserPosts id={userId} />
+      <DisplayUserPosts id={userId} userName={userName} />
     </div>
   );
 }
